@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Rclone NAS Fujitsu — prywatna integracja Google Drive z NAS, montowanie dysku, kopie zapasowe i synchronizacja plików.">
+  <meta name="robots" content="index, follow">
+  <title>Strona główna / Home | Rclone NAS Fujitsu</title>
+  <style>
+:root{color-scheme:dark;--bg:#0a1020;--panel:#111b31;--panel2:#16243e;--ink:#edf3fe;--muted:#a5b5cf;--line:#283b57;--brand:#78c7ff;--mint:#85e6bb;--radius:18px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:280px;font:16px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;background:radial-gradient(ellipse at 15% -10%,#15395c 0,transparent 45%),radial-gradient(ellipse at 100% 10%,#153229 0,transparent 34%),var(--bg);color:var(--ink)}
+a{color:var(--brand);text-underline-offset:3px}a:hover{color:#b7e5ff}.shell{width:min(1080px,calc(100% - 40px));margin:auto}
+header{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:30px 0;border-bottom:1px solid var(--line)}.logo{display:flex;align-items:center;gap:12px;font-weight:750;letter-spacing:.1px;color:var(--ink);text-decoration:none}.logo-mark{display:grid;place-items:center;width:39px;height:39px;border-radius:11px;background:linear-gradient(145deg,#54bcf7,#7ae5b1);color:#0b2339;font-size:21px;font-weight:800}.nav{display:flex;gap:22px;flex-wrap:wrap}.nav a{text-decoration:none;color:var(--muted);font-size:.94rem}.nav a[aria-current=page]{color:var(--ink);font-weight:700}
+.hero{padding:76px 0 35px}.eyebrow{font-size:.78rem;letter-spacing:.12em;font-weight:800;text-transform:uppercase;color:var(--mint)}h1{font-size:clamp(2.15rem,5vw,4.1rem);line-height:1.12;letter-spacing:-.04em;margin:16px 0 24px;max-width:900px}h2{font-size:1.45rem;letter-spacing:-.02em;line-height:1.35;margin:0 0 13px}h3{font-size:1.08rem;margin:0 0 8px}.lead{font-size:clamp(1.04rem,2.5vw,1.23rem);max-width:770px;color:#c3d3e8}.small-english{font-size:.94rem;color:var(--muted)}.pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}.pill{border:1px solid #2f5672;background:#133047;color:#b5e7fc;padding:6px 12px;border-radius:40px;font-size:.79rem;font-weight:650}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 42px}.card,.panel,.section{border:1px solid var(--line);background:linear-gradient(155deg,var(--panel),#0d172b);border-radius:var(--radius);padding:26px}.card .n{display:inline-grid;place-items:center;background:#173754;color:var(--brand);height:40px;width:40px;border-radius:10px;margin-bottom:18px;font-weight:850}.card p,.section p,.panel p{color:#c4d1e4;margin:0 0 12px}.section{margin:18px 0}.section h2{margin-bottom:12px}.section p:last-child,.card p:last-child{margin-bottom:0}.callout{border-left:3px solid var(--mint);border-radius:0 14px 14px 0;background:#0f2e31;padding:18px 22px;margin:22px 0 34px}.callout p{margin:0;color:#d6f3e7}.cta{display:inline-block;padding:11px 19px;border-radius:11px;background:var(--brand);color:#05223a;font-weight:750;text-decoration:none;margin:12px 0}.cta:hover{color:#061b2d;background:#b7e5ff}footer{border-top:1px solid var(--line);margin-top:60px;padding:26px 0 38px;display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;color:var(--muted);font-size:.85rem}.meta{font-size:.88rem;color:var(--muted);margin-top:12px}.policy-list{padding-left:22px;color:#c4d1e4}.policy-list li{padding:3px 0}strong{color:#f4f8ff}.intro{max-width:790px} .section .en{font-size:.92rem;color:var(--muted);border-top:1px solid #26354d;margin-top:15px;padding-top:13px}
+@media(max-width:710px){header{align-items:flex-start;flex-direction:column;padding:22px 0}.hero{padding-top:46px}.grid{grid-template-columns:1fr}.card,.section,.panel{padding:20px}.shell{width:min(1080px,calc(100% - 28px))}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header>
+    <a class="logo" href="./index.html" aria-label="Rclone NAS Fujitsu — strona główna"><span class="logo-mark" aria-hidden="true">R</span><span>Rclone NAS Fujitsu</span></a>
+    <nav class="nav" aria-label="Nawigacja">
+      <a href="./index.html" aria-current="page">Strona główna / Home</a>
+      <a href="./privacy.html" >Prywatność / Privacy</a>
+    </nav>
+  </header>
+  <main>
+<section class="hero">
+  <div class="eyebrow">Personal Google Drive Integration · Private use</div>
+  <h1>Google Drive na prywatnym serwerze NAS.</h1>
+  <p class="lead">Rclone NAS Fujitsu to prywatna integracja umożliwiająca właścicielowi bezpieczny dostęp do własnego Google Drive z domowego serwera, wykonywanie kopii zapasowych i synchronizację plików.</p>
+  <p class="small-english intro" lang="en">Rclone NAS Fujitsu is an owner-operated, single-user Google Drive integration for a personal NAS. It uses the Rclone open-source tool to mount Drive storage, transfer files and maintain personal backups. It is not offered as a public service.</p>
+  <div class="pills"><span class="pill">Single-user / Jeden użytkownik</span><span class="pill">Google OAuth 2.0</span><span class="pill">Local NAS + Rclone</span></div>
+</section>
+<div class="grid" aria-label="Funkcje aplikacji">
+  <article class="card"><span class="n" aria-hidden="true">01</span><h3>Montowanie dysku</h3><p>Dostęp do własnych plików Google Drive jak do dysku sieciowego.</p><p class="small-english" lang="en">Mount personal Google Drive storage as a filesystem on the owner's devices.</p></article>
+  <article class="card"><span class="n" aria-hidden="true">02</span><h3>Kopie zapasowe</h3><p>Przesyłanie wybranych plików i archiwów NAS na konto właściciela.</p><p class="small-english" lang="en">Back up owner-selected files and NAS data to the owner's Drive account.</p></article>
+  <article class="card"><span class="n" aria-hidden="true">03</span><h3>Synchronizacja</h3><p>Kopiowanie i zarządzanie plikami na wyraźne polecenie właściciela.</p><p class="small-english" lang="en">Transfer, organize and synchronize files when explicitly configured by the owner.</p></article>
+</div>
+<section class="section">
+  <h2>Jak działa dostęp do Google Drive?</h2>
+  <p>Właściciel loguje się do własnego konta Google i udziela zgody OAuth. Rclone korzysta z Google Drive API w zakresie nadanych uprawnień. W zależności od konfiguracji może odczytywać listę i zawartość plików, tworzyć, aktualizować, przenosić oraz usuwać pliki. Działania są wykonywane na polecenie właściciela lub według skonfigurowanych przez niego zadań.</p>
+  <p class="en" lang="en">The owner authorizes access with Google OAuth 2.0. Depending on the granted Drive scope, Rclone can list, read, create, update, move or delete files to perform owner-configured mounts, copies, backups and synchronization tasks. The integration is not available for third-party registration.</p>
+</section>
+<section class="section">
+  <h2>Prywatność przede wszystkim</h2>
+  <p>Tokeny OAuth i konfiguracja Rclone nie są publikowane na tej stronie. Dostęp do danych Google Drive pozostaje pod kontrolą właściciela konta. Witryna ma charakter informacyjny i nie zbiera danych logowania ani plików z Google Drive.</p>
+  <p class="en" lang="en">This website is informational only. It does not collect Drive files, OAuth tokens, passwords or visitor analytics. See our policy for details on local storage, processing and revoking access.</p>
+  <a class="cta" href="./privacy.html">Polityka prywatności / Read Privacy Policy →</a>
+</section>
+<div class="callout"><p><strong>Informacja / Notice:</strong> This is a private integration operated independently by its owner. It is not an official Google product and is not affiliated with or endorsed by Google or the Rclone project.</p></div>
+<section class="panel"><h2>Kontakt / Contact</h2><p>Pytania dotyczące integracji i danych: <a href="mailto:telewizoryogladam@gmail.com">telewizoryogladam@gmail.com</a></p><p class="small-english" lang="en">Questions about this private integration or privacy policy may be sent to the address above.</p></section>
+</main>
+  <footer>
+    <span>© 2026 Rclone NAS Fujitsu · Private, owner-operated integration</span>
+    <span>Kontakt / Contact: <a href="mailto:telewizoryogladam@gmail.com">telewizoryogladam@gmail.com</a></span>
+  </footer>
+</div>
+</body>
+</html>
